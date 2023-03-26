@@ -3,6 +3,10 @@ import words from "./wordList.json"
 import {HangmanDrawing} from "./HangmanDrawing";
 import {HangmanWord} from "./HangmanWord";
 import {Keyboard} from "./Keyboard";
+import styles from "./App.module.css";
+import LoserComponent from "./LoserComponent";
+import WinnerComponent from "./WinnerComponent";
+import MainComponent from "./MainComponent";
 
 function App() {
     const [wordToGuess, setWordToGuess] = useState<string>(() => {
@@ -36,35 +40,65 @@ function App() {
         }
     }, [guessedLetters])
 
+    const restartGame = () => {
+        setWordToGuess(words[Math.floor(Math.random() * words.length)])
+        setGuessedLetters([])
+    }
+
+
     return (
-        <div
-            style={{
-                maxWidth: "800px",
-                display: "flex",
-                flexDirection: "column",
-                gap: "2rem",
-                margin: "0  auto",
-                alignItems: "center"
-            }}
-        >
-            <div style={{fontSize: "2rem", textAlign: "center"}}>
-                {isWinner && "Winner! - Refresh to try again"}
-                {isLoser && "Nice Try - Refresh to try again"}
-            </div>
-            <HangmanDrawing numberOfGuesses={incorrectLetters.length}/>
-            <HangmanWord
+        <>
+            {isLoser
+                ? <LoserComponent
+                    restartGame={restartGame}
+                />
+                : ""
+            }
+            <MainComponent
+                isWinner={isWinner}
                 guessedLetters={guessedLetters}
                 wordToGuess={wordToGuess}
-                reveal={isLoser}
+                isLoser={isLoser}
+                addGuessedLetter={addGuessedLetter}
+                incorrectLetters={incorrectLetters}
+                restartGame={restartGame}
             />
-            <div style={{alignSelf: "stretch"}}>
-                <Keyboard activeLetter={guessedLetters.filter(letter => wordToGuess.includes(letter))}
-                          inactiveLetters={incorrectLetters}
-                          addGuessedLetter={addGuessedLetter}
-                          disabled={isLoser || isWinner}
-                />
-            </div>
-        </div>
+            {/*<div*/}
+            {/*    style={{*/}
+            {/*        maxWidth: "800px",*/}
+            {/*        display: "flex",*/}
+            {/*        flexDirection: "column",*/}
+            {/*        gap: "2rem",*/}
+            {/*        margin: "0  auto",*/}
+            {/*        alignItems: "center"*/}
+            {/*    }}*/}
+            {/*>*/}
+            {/*    <div style={{fontSize: "2rem", textAlign: "center"}}>*/}
+            {/*        {isWinner && "Winner! - Refresh to try again"}*/}
+            {/*        /!*{isLoser && "Nice Try - Refresh to try again"}*!/*/}
+            {/*    </div>*/}
+
+            {/*    <HangmanDrawing numberOfGuesses={incorrectLetters.length}/>*/}
+
+            {/*    <HangmanWord*/}
+            {/*        guessedLetters={guessedLetters}*/}
+            {/*        wordToGuess={wordToGuess}*/}
+            {/*        reveal={isLoser}*/}
+            {/*    />*/}
+            {/*    <div style={{alignSelf: "stretch"}}>*/}
+            {/*        <Keyboard activeLetter={guessedLetters.filter(letter => wordToGuess.includes(letter))}*/}
+            {/*                  inactiveLetters={incorrectLetters}*/}
+            {/*                  addGuessedLetter={addGuessedLetter}*/}
+            {/*                  disabled={isLoser || isWinner}*/}
+            {/*                  restartGame={restartGame}*/}
+            {/*        />*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            {/*{isWinner ?*/}
+            {/*    <WinnerComponent/>*/}
+            {/*    : ""}*/}
+
+        </>
     )
 }
 

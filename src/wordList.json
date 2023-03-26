@@ -7,6 +7,9 @@
   "jest",
   "redux",
   "docker",
-  "mui"
+  "materialui",
+  "storybook",
+  "git",
+  "figma"
 
 ]

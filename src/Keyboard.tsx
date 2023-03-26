@@ -34,6 +34,7 @@ type KeyboardPropsType = {
     inactiveLetters: string[]
     addGuessedLetter: (letter: string) => void
     disabled: boolean
+    restartGame: ()=> void
 }
 
 export function Keyboard(props: KeyboardPropsType) {
@@ -56,5 +57,6 @@ export function Keyboard(props: KeyboardPropsType) {
                 </button>
             )
         })}
+        <button onClick={props.restartGame} className={`${styles.refresh}`}>restart the game</button>
     </div>
 }

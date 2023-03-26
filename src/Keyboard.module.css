@@ -24,3 +24,15 @@
 .btn:focus:not(:disabled) {
     background-color: hsl(200, 100%, 75%);
 }
+
+.refresh {
+    border: 3px solid black;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: aquamarine;
+}
+
+.refresh:hover {
+    background-color: cadetblue;
+}
