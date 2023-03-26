@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/hangman/static/css/main.6e747e2b.css",
-    "main.js": "/hangman/static/js/main.d055d91c.js",
+    "main.css": "/hangman/static/css/main.18bbee44.css",
+    "main.js": "/hangman/static/js/main.89ceb12d.js",
     "static/js/787.28cb0dcd.chunk.js": "/hangman/static/js/787.28cb0dcd.chunk.js",
+    "static/media/React-icon.svg.png": "/hangman/static/media/React-icon.svg.8a6fc0a24a800d1e0f4a.png",
+    "static/media/Figma-logo.svg.png": "/hangman/static/media/Figma-logo.svg.b08682c3a0753f59813f.png",
+    "static/media/1452px-CSS3_logo_and_wordmark.svg.png": "/hangman/static/media/1452px-CSS3_logo_and_wordmark.svg.cd13bf0a8423210549cb.png",
+    "static/media/Typescript_logo_2020.svg.png": "/hangman/static/media/Typescript_logo_2020.svg.52ea0bc40ba11d507e7d.png",
+    "static/media/Git-logo.svg.png": "/hangman/static/media/Git-logo.svg.90b5ec65a2b350bb3daf.png",
+    "static/media/vertical-logo-monochromatic.webp": "/hangman/static/media/vertical-logo-monochromatic.50ef259c2ba21b66c115.webp",
+    "static/media/HTML5_logo_and_wordmark.svg.png": "/hangman/static/media/HTML5_logo_and_wordmark.svg.d50fc7a86b6f3764610b.png",
+    "static/media/Redux.png": "/hangman/static/media/Redux.543b98d3c75b48613322.png",
+    "static/media/JavaScript-logo.png": "/hangman/static/media/JavaScript-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/hangman/index.html",
-    "main.6e747e2b.css.map": "/hangman/static/css/main.6e747e2b.css.map",
-    "main.d055d91c.js.map": "/hangman/static/js/main.d055d91c.js.map",
+    "main.18bbee44.css.map": "/hangman/static/css/main.18bbee44.css.map",
+    "main.89ceb12d.js.map": "/hangman/static/js/main.89ceb12d.js.map",
     "787.28cb0dcd.chunk.js.map": "/hangman/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e747e2b.css",
-    "static/js/main.d055d91c.js"
+    "static/css/main.18bbee44.css",
+    "static/js/main.89ceb12d.js"
   ]
 }
