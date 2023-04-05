@@ -26,6 +26,8 @@ function App() {
     }, [guessedLetters])
 
     useEffect(() => {
+        document.title = 'HANGMAN';
+
         const handler = (e: KeyboardEvent) => {
             const key = e.key.toLowerCase()
             if (!key.match(/^[a-z]$/)) return
