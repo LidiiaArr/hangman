@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hangman/static/css/main.18bbee44.css",
-    "main.js": "/hangman/static/js/main.89ceb12d.js",
+    "main.js": "/hangman/static/js/main.2f45d984.js",
     "static/js/787.28cb0dcd.chunk.js": "/hangman/static/js/787.28cb0dcd.chunk.js",
     "static/media/React-icon.svg.png": "/hangman/static/media/React-icon.svg.8a6fc0a24a800d1e0f4a.png",
     "static/media/Figma-logo.svg.png": "/hangman/static/media/Figma-logo.svg.b08682c3a0753f59813f.png",
@@ -14,11 +14,11 @@
     "static/media/JavaScript-logo.png": "/hangman/static/media/JavaScript-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/hangman/index.html",
     "main.18bbee44.css.map": "/hangman/static/css/main.18bbee44.css.map",
-    "main.89ceb12d.js.map": "/hangman/static/js/main.89ceb12d.js.map",
+    "main.2f45d984.js.map": "/hangman/static/js/main.2f45d984.js.map",
     "787.28cb0dcd.chunk.js.map": "/hangman/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18bbee44.css",
-    "static/js/main.89ceb12d.js"
+    "static/js/main.2f45d984.js"
   ]
 }
